@@ -1,0 +1,13 @@
+
+CREATE DATABASE IF NOT EXISTS `photo_gallery`;
+
+USE `photo_gallery`;
+
+CREATE TABLE IF NOT EXISTS `images`(
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    `title` VARCHAR(255) NOT NULL,
+    `description` TEXT,
+    `filename` VARCHAR(255) NOT NULL,
+    `upload_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
